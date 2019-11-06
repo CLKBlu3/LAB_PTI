@@ -1,0 +1,2 @@
+./compile-java && docker build -t tomcatcustom:latest . && docker run --name tomcat -d -v $("pwd")/my_webapp:/usr/local/tomcat/webapps/my_webapp -p 8080:8080 -p 8443:8443 tomcatcustom
+
